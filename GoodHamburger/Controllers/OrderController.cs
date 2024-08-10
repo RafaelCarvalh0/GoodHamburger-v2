@@ -99,7 +99,6 @@ namespace GoodHamburger.Controllers
         /// <param name="OrderId">The ID of the order to be removed.</param>
         /// <returns>Returns true if the order was successfully removed; otherwise, false.</returns>
         /// <response code="200">Ok</response>
-        /// <response code="404">Not Found</response>
         /// <response code="500">Internal Server Error</response>
         [HttpDelete]
         [Route("[action]/{OrderId}")]

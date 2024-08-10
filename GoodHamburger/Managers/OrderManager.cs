@@ -252,8 +252,8 @@ namespace GoodHamburger
         {
             try
             {
-                Order Order = await _context.Order.FindAsync(OrderId);
-                Order = Order ?? throw new CustomException("Order not found", StatusCodes.Status400BadRequest);
+                Order Order = await _context.Order.FindAsync(OrderId) ?? 
+                    throw new CustomException("Order not found", StatusCodes.Status400BadRequest);
 
                 _context.Order.Remove(Order);
                 await _context.SaveChangesAsync();
