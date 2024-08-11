@@ -2,6 +2,7 @@
 using GoodHamburger.Models.Order;
 using GoodHamburger.Models.Product;
 using GoodHamburger.ViewModels.Order;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
 namespace GoodHamburger
@@ -41,7 +42,7 @@ namespace GoodHamburger
             catch (CustomException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
-            }       
+            }
         }
 
         private void ValidateProducts(Products Products)
@@ -67,10 +68,10 @@ namespace GoodHamburger
 
                 return Sandwich;
             }
-            catch (CustomException ex)
+            catch (SqliteException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
-            }           
+            }
         }
 
         private async Task<List<Extra>> GetExtrasAsync(List<Extra> Extras)
@@ -87,10 +88,10 @@ namespace GoodHamburger
 
                 return ExistingExtras;
             }
-            catch (CustomException ex)
+            catch (SqliteException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
-            }           
+            }
         }
 
         private decimal CalculateTotal(Sandwich Sandwich, List<Extra> Extras)
@@ -98,13 +99,13 @@ namespace GoodHamburger
             decimal SandwichPrice = Sandwich.Price;
             decimal ExtrasPrice = Extras.Sum(extra => extra.Price);
 
-            if (Extras.Count == 2)
+            if (Extras.Count is 2) // Fries and soda
                 return (SandwichPrice + ExtrasPrice) * 0.8M;
 
-            else if (Extras.First().Id == 1)
+            else if (Extras.First().Id is 1) // Just Fries
                 return (SandwichPrice + ExtrasPrice) * 0.9M;
 
-            else
+            else // Just Soda
                 return (SandwichPrice + ExtrasPrice) * 0.85M;
         }
 
@@ -129,10 +130,10 @@ namespace GoodHamburger
                 }
                 await _context.SaveChangesAsync();
             }
-            catch (CustomException ex)
+            catch (SqliteException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
-            }           
+            }
         }
 
         #endregion
@@ -164,11 +165,11 @@ namespace GoodHamburger
 
                 return OrderList;
             }
-            catch (CustomException ex)
+            catch (SqliteException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
             }
-            
+
         }
         #endregion
 
@@ -183,8 +184,8 @@ namespace GoodHamburger
             }
             catch (CustomException ex)
             {
-                new CustomException(ex.Message, ex.StatusCode);
-            }       
+                throw new CustomException(ex.Message, ex.StatusCode);
+            }
         }
 
         private async Task FindOrderById(int OrderId, Products Products)
@@ -203,11 +204,10 @@ namespace GoodHamburger
                 if (extras.Count is 0)
                     throw new CustomException("Invalid extra", StatusCodes.Status400BadRequest);
             }
-            catch (CustomException ex)
+            catch (SqliteException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
-            }
-            
+            }    
         }
 
         private async Task RemoveOrderById(int OrderId)
@@ -217,7 +217,7 @@ namespace GoodHamburger
                 List<OrderItem> Order = await _context.OrderItem.Where(oi => oi.OrderId == OrderId).ToListAsync();
                 _context.OrderItem.RemoveRange(Order);
             }
-            catch (CustomException ex)
+            catch (SqliteException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
             }
@@ -240,10 +240,10 @@ namespace GoodHamburger
 
                 await _context.SaveChangesAsync();
             }
-            catch (CustomException ex)
+            catch (SqliteException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
-            }         
+            }
         }
         #endregion
 
@@ -252,13 +252,13 @@ namespace GoodHamburger
         {
             try
             {
-                Order Order = await _context.Order.FindAsync(OrderId) ?? 
+                Order Order = await _context.Order.FindAsync(OrderId) ??
                     throw new CustomException("Order not found", StatusCodes.Status400BadRequest);
 
                 _context.Order.Remove(Order);
                 await _context.SaveChangesAsync();
             }
-            catch (CustomException ex)
+            catch (SqliteException ex)
             {
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
             }
