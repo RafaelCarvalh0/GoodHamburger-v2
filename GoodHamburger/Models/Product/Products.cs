@@ -1,4 +1,6 @@
-﻿namespace GoodHamburger.Models.Product
+﻿using Swashbuckle.AspNetCore.Annotations;
+
+namespace GoodHamburger.Models.Product
 {
     public class Products
     {

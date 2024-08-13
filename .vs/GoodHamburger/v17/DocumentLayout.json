@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Developer\\ST\\GoodHamburger-v2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|solutionrelative:goodhamburger\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\managers\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|solutionrelative:goodhamburger\\managers\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|solutionrelative:goodhamburger\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\models\\product\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|solutionrelative:goodhamburger\\models\\product\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|solutionrelative:goodhamburger\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\utils\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|solutionrelative:goodhamburger\\utils\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|solutionrelative:goodhamburger\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9337B3E5-EF63-498D-B4B1-11AD6D5892F1}|GoodHamburger\\GoodHamburger.csproj|c:\\developer\\st\\goodhamburger-v2\\goodhamburger\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,57 +71,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "GoodHamburger\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "GoodHamburger\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwB8AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T00:51:45.589Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OrderManager.cs",
               "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Managers\\OrderManager.cs",
               "RelativeDocumentMoniker": "GoodHamburger\\Managers\\OrderManager.cs",
               "ToolTip": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Managers\\OrderManager.cs",
               "RelativeToolTip": "GoodHamburger\\Managers\\OrderManager.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAIwK8AAAAIAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwA8BAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T23:16:28.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T23:16:28.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Program.cs",
               "RelativeDocumentMoniker": "GoodHamburger\\Program.cs",
               "ToolTip": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Program.cs",
               "RelativeToolTip": "GoodHamburger\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAABPAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T22:52:53.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T22:52:53.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "GoodHamburger\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "GoodHamburger\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAUwC0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T22:52:20.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CustomException.cs",
               "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Utils\\CustomException.cs",
               "RelativeDocumentMoniker": "GoodHamburger\\Utils\\CustomException.cs",
               "ToolTip": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Utils\\CustomException.cs",
               "RelativeToolTip": "GoodHamburger\\Utils\\CustomException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T17:38:35.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T17:38:35.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Models\\Product\\Products.cs",
+              "RelativeDocumentMoniker": "GoodHamburger\\Models\\Product\\Products.cs",
+              "ToolTip": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Models\\Product\\Products.cs",
+              "RelativeToolTip": "GoodHamburger\\Models\\Product\\Products.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T23:54:44.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "GoodHamburger\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "GoodHamburger\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T22:52:20.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "GoodHamburger\\ApplicationDbContext.cs",
@@ -129,20 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "GoodHamburger\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "GoodHamburger\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAgwFQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T00:51:45.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "OrderViewModel.cs",
               "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\ViewModels\\Order\\OrderViewModel.cs",
               "RelativeDocumentMoniker": "GoodHamburger\\ViewModels\\Order\\OrderViewModel.cs",
@@ -154,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Extra.cs",
               "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Models\\Product\\Extra.cs",
               "RelativeDocumentMoniker": "GoodHamburger\\Models\\Product\\Extra.cs",
@@ -166,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\Gamer\\AppData\\Roaming\\Microsoft\\UserSecrets\\6830641c-84ff-4d60-b56d-c1879c92a03d\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\Gamer\\AppData\\Roaming\\Microsoft\\UserSecrets\\6830641c-84ff-4d60-b56d-c1879c92a03d\\secrets.json",
@@ -178,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Sandwich.cs",
               "DocumentMoniker": "C:\\Developer\\.NET\\GoodHamburger\\GoodHamburger\\Models\\Products\\Sandwich.cs",
               "RelativeDocumentMoniker": "..\\..\\.NET\\GoodHamburger\\GoodHamburger\\Models\\Products\\Sandwich.cs",
@@ -189,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Products.cs",
               "DocumentMoniker": "C:\\Developer\\.NET\\GoodHamburger\\GoodHamburger\\Models\\Products\\Products.cs",
               "RelativeDocumentMoniker": "..\\..\\.NET\\GoodHamburger\\GoodHamburger\\Models\\Products\\Products.cs",
@@ -200,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\Models\\Order\\Order.cs",
               "RelativeDocumentMoniker": "GoodHamburger\\Models\\Order\\Order.cs",
@@ -212,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -224,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "GoodHamburger",
               "DocumentMoniker": "C:\\Developer\\ST\\GoodHamburger-v2\\GoodHamburger\\GoodHamburger.csproj",
               "RelativeDocumentMoniker": "GoodHamburger\\GoodHamburger.csproj",

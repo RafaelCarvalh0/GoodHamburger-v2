@@ -22,7 +22,7 @@ namespace GoodHamburger.Controllers
         /// <summary>
         /// Creates an order.
         /// </summary>
-        /// <param></param>
+        /// <param name="products"></param>
         /// <returns>Return the amount that will be charged to the customer</returns>
         /// <response code="200">Ok</response>
         /// <response code="400">Bad Request</response>
@@ -72,6 +72,7 @@ namespace GoodHamburger.Controllers
         /// Updates an order.
         /// </summary>
         /// <param name="OrderId"></param>
+        /// <param name="products"></param>
         /// <returns>Returns true if the order was successfully updated; otherwise, false.</returns>
         /// <response code="200">Ok</response>
         /// <response code="400">Bad Request</response>

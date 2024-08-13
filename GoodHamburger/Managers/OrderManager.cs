@@ -45,18 +45,6 @@ namespace GoodHamburger
             }
         }
 
-        private void ValidateProducts(Products Products)
-        {
-            if (Products.sandwiches.Count > 1)
-                throw new CustomException("You should choose only one sandwich!", StatusCodes.Status400BadRequest);
-
-            else if (Products.extras.Count > 2)
-                throw new CustomException("You should choose only two extra!", StatusCodes.Status400BadRequest);
-
-            else if (Products.extras.GroupBy(e => e.Id).Any(e => e.Count() > 1))
-                throw new CustomException("You cannot select more than one soda or one fries!", StatusCodes.Status400BadRequest);
-        }
-
         private async Task<Sandwich> GetSandwichAsync(int SandwichId)
         {
             try
@@ -178,6 +166,7 @@ namespace GoodHamburger
         {
             try
             {
+                ValidateProducts(Products);
                 await FindOrderById(OrderId, Products);
                 await RemoveOrderById(OrderId);
                 await UpdateOrderAsync(OrderId, Products);
@@ -263,6 +252,21 @@ namespace GoodHamburger
                 throw new CustomException(ex.Message, StatusCodes.Status500InternalServerError);
             }
 
+        }
+        #endregion
+
+
+        #region Partial
+        private void ValidateProducts(Products Products)
+        {
+            if (Products.sandwiches.Count > 1)
+                throw new CustomException("You should choose only one sandwich!", StatusCodes.Status400BadRequest);
+
+            else if (Products.extras.Count > 2)
+                throw new CustomException("You should choose only two extra!", StatusCodes.Status400BadRequest);
+
+            else if (Products.extras.GroupBy(e => e.Id).Any(e => e.Count() > 1))
+                throw new CustomException("You cannot select more than one soda or one fries!", StatusCodes.Status400BadRequest);
         }
         #endregion
     }
